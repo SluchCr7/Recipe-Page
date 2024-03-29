@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+    --Brown_red: hsl(14, 45%, 36%);
+}
+body{
+    background-color: var(--Eggshell);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 90vh;
+    gap: 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+.Recipe{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 500px;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: var(--White);
+}
+.Image_Recipe{
+    margin-bottom: 10px;
+}
+.Image_Recipe img{
+    width: 100%;
+    border-radius: 10px;
+}
+.txt_cont_Recipe{
+    margin: 18px 0;
+}
+.txt_cont_Recipe .heading_recipe{
+    font-size: 1.6rem;
+}
+.paragraph_recipe{
+    font-size: .8rem;
+    margin-top: 10px;
+}
+.txt_color_cont_recipe{
+    background-color: var(--Rose-White);
+    padding: 10px;
+    border-radius: 10px;
+}
+.span_txt_cont{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--Brown_red);
+}
+.list_recipe{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.list_recipe span{
+    font-weight: 700;
+}
+.span_txt_cont_fill{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--Brown_red);
+}
+hr{
+    border: 1px solid var(--Light-Grey);
+}
+.list_recipe_instructions{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    list-style: decimal;
+}
+.list_recipe_instructions span{
+    font-weight: 700;
+}
+.recipe_p_fill{
+    margin-top: 10px;
+    font-size: .8rem;
+    color: var(--Dark-Charcoal);
+}
+.list_recipe_fill_nutri{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    list-style: none;
+}
+.list_recipe_fill_nutri li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px 30% 0 0;
+}
+.attribution{
+    margin-top: 10px;
+    font-size: .8rem;
+    color: var(--Dark-Charcoal);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.attribution a{
+    color: var(--Brown_red);
+    text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+    .Recipe{
+        width: 300px;
+    }
+}
